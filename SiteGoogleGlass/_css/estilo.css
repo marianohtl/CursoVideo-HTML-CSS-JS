@@ -1,0 +1,456 @@
+﻿@charset "UTF-8"; /*evita problemas de acentua��o*/
+/*IMPORTANDO UMA FONTE DO GOOGLEFONTS*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:500');
+@font-face {
+    font-family: 'FonteLogo'; /*nome da fonte*/
+    src: url("../_fonts/bubblegum-sans-regular.otf"); /*localiza��o do arquivo*/
+}
+
+/*background-color:par�metro;  - cor de fundo
+           color:par�metro; - core das letras
+
+        
+body {
+    background-color: black;
+    color: white;
+}
+
+         color:#par�metro;     
+         cor RGB 
+         ~~ 2 1� d�gitos = quantidade red 
+         ~~ dois d�gitos centrais = quantidade green 
+         ~~ dois d�gitos final = quantidade azul
+         
+         color: rgb(par�metro,par�metro,par�metro);
+         ~~valores absolutos = 
+        
+         
+         background-color: url("nomedarquivo.jpg");
+         Fundo imagem.
+         colocar arquivo jpg na mesma �rea do arquivo texto
+         
+
+         color: rgb(par�metro,par�metro,par�metro, CANAL ALPHA);
+            CANAL ALPHA = N�VEL DE TRANSPAR�NCIA ENTRE 0 E 1
+
+        color: rgb(0,0,0,0.5); PRETO COM 50% DE TRANSPAR�NCIA 
+
+
+         HILL SATURATION% BRIGHT% ou MATIZ SATURA��O% LUMINOSIDADE%
+         background-color: hsl(par�metro,%par�metro%,%par�metro%);
+         background-color: hsl(165,81%, 93%);
+            COM O CANAL ALPHA  ~~~ HSLA
+         background-color: hsla(165,81%, 93%, 0.5);
+         */
+
+/*
+h1 {
+    color: #f59014;
+    background-color: hsla(24,81%, 93%, 1);
+}
+*/
+
+body {
+    background-color: #dddddd;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+/*div interface organizando os conte�dos em posi��o relativa (dentro da div)
+    fundo branco na interface
+    CENTRALIZANDO O OBJETO ~~ MARGIN
+    box shadow - SOMBRA EM VOLTA DO OBJETO
+    padding - mexendo na parte interna do objeto
+        ~~ temos tamb�m as configura��es de PADDING ou MARGIN
+            ~~ top
+            ~~~left
+            ~~ right
+            ~~ botton
+*/
+div#interface {
+    width: 1250px;
+    background-color:white;
+    margin:-20px auto 0px auto;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+    padding:10px 10px 10px 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px; /*texto justificado*/
+}
+
+
+a {
+    color:#606060;
+    text-decoration:none;
+}
+
+/*todos os links, quando o mouse passa por cima, ficam com um sublinhado*/
+a:hover{
+    text-decoration:underline;
+}
+/*COLOCANDO IMAGEM ID ICONE EM POSI��O ABSOLUTA E CONFIGURANDO SUA POSI��O
+*/
+img#icone {
+       position: absolute;
+       left: 1110px;
+       top: 70px;
+}
+
+/*criando uma linha com o border
+    ~~~left
+    ~~right
+    ~~top
+    ~~botton
+ border-botton:  par�metro par�metro par�metro; 
+    ~~ tamanho
+    ~~cor
+    ~~ tipo borda
+        ~~ solid 
+        ~~ dashed (pontilhado)
+        ~~ autset
+        ~~ inset
+        ~~doble (mais �nfase)
+height - altura do cabecalho
+*/
+
+/* >>>>>>>>>>>>>>>>>> IMAGEM COMO BACKGROUND  <<<<<<<<<<<<<<
+    background:  url("../_imagens/glass-logo-peq.jpg");
+
+    ~~ no reapeat > > > par�metro para n�o repetir a imagem 
+    parametro deslocamento 
+        ~~ latera
+        ~~ vertical
+*/
+
+header#cabecalho{
+    border-bottom:1px #606060 solid;
+    height:150px;
+    background:  url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+/* tipo de fonte , decora��o da fonte
+   tamanho da fonte
+    cor da fonte
+    sombra na fonte
+    espa�o interno do texto
+    espa�o externo do texto
+*/
+
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color:#606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    padding:0px;
+    margin-bottom: 0px;
+}
+
+
+/*google fonts*/
+header#cabecalho h2 {
+        font-family: 'Raleway', sans-serif;
+        color: #808080;
+        font-size: 15pt;
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+
+/* conex�o do par�metro class  >>  . */
+figure.foto-legenda {
+    position:relative; /*OBJETO PAI*/
+    border: 8px solid white; /*borda no figura*/
+    box-shadow: 1px 1px 4px black; /*sombra na borda da figura*/
+}
+
+figure.foto-legenda img{
+    width: 100%; /*largura*/
+    height: 100%; /*altura*/
+}
+
+figure.foto-legenda figcaption{
+    opacity:0; /* "some" com a legenda , tira a opacidade */ 
+    position: absolute;/*posi��o absoluta dentro do container -a borda branca - OBJETO FILHO DO FIGURE*/
+    top:0px;
+    background-color: rgba(0,0,0,0.4);
+    color:white;
+    width:100%;
+    height:100%;
+    padding:10px; /*mechendo posi��o do texto*/
+    box-sizing:border-box; /*Cria um box dentro da borda, impede que a borda transpasse*/
+    transition:opacity 1s; /*efeito de transi��o - par�metro da transi��o e tempo que desejamos */
+}
+  
+
+
+/*Dispara uma classe espec�fica - Formata��o espec�fica - quando se passa o mouse sobre o objeto - no caso � o figure.caption */
+ 
+figure.foto-legenda:hover figcaption {
+     opacity: 1; /*opacidade de 100%*/
+}
+
+
+ /* Fomata��o do Menu */
+ /* ID >> #*/
+
+nav#menu ol {
+    list-style: none; /* sem formata��o*/
+    text-transform: uppercase; /* transformando as letras em mai�sculas*/
+    position: absolute; /*padr�o para que a lista flutue na p�gina, */
+    top: -10px;
+    left: 560px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+    POSI��O RELATIVA
+    COLOCANDO POSI��O RELATIVA AS LISTAS DO UL,> PRESO DENTRO DO CONTAINER <
+    as listas podem ser movimentada dentro do espa�o do menu nav
+    COLOCANDO POSI��O ABSOLUTA NAS UL,  > FICA LIVRE NO SITE <
+    as lista podem ser movimentadas dentro dentro de todo espa�o do site
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav#menu li {
+    display:inline-block; /*�tens da lista organizado horizontalmente*/
+    background-color:#dddddd; /*cor de fundo dos �tens*/
+    padding:10px;/*padding CONTROLA espa�o dentro do OBJETO*/
+    margin:2px;/*CONTROLA ESPA�O FORA DO OBJETO*/
+    transition:background-color 1s; /*Monitorando o background color , tempo da transi��o */
+}
+
+/*DISPARANDO UMA FUN��O DE MUDAN�A DE COR QUANDO O MOUSE EST� SOBRE OS �TENS DO MENU   */
+nav#menu li:hover {
+       background-color: rgba(0,0,0,0.4);
+}
+
+nav#menu h1 {
+    display:none; /* oculta o texto principal do menu de navega��o */
+}
+
+/*menu de navega��o - letras cor preta / sem sublinhado */
+nav#menu a{
+    color:black;
+    text-decoration:none;
+}
+/* DISPARA FUN��O PARA MUDAR AS LETRAS DO MENU QUANDO O MOUSE EST� POR CIMA */
+
+nav#menu a:hover {
+    color:white;
+}
+
+/*>>>>FLOAT: PAR�METRO
+    flutue pelo lado esquerdo
+    OBJETOS CONFIGURADOS EM BLOCOS
+
+    border-right > uma linha de um pixel s�lida e com cor
+    borda linha
+*/
+
+
+section#corpo{
+    display: block;
+    width:600px; /*largura*/
+    float:left;
+    border-right:1px solid #606060;
+    padding-right:15px;
+}
+
+article#noticia-principal h2 {
+    font-size:12pt;
+    color:#606060;
+    background-color:#dddddd;
+    padding:5px 0px 5px 10px;
+    margin:10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+
+/*classe direita  referente a um dos h3 do cabe�alho da se��o*/
+.direita{
+    text-align:right;
+}
+
+header#cabecalho-artigo h2 {
+    font-size:13pt;
+    color:#cecece;
+    background-color:#ffffff;
+    margin:0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size:12px;
+    color:#606060;
+    
+}
+/* CRIANDO TABELA 
+    ~BORDA DA TABELA 
+    ~espa�o entre as bordas
+    ~~ margin left and right >> auto >> centralizando table
+*/
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;    
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+/*BORDA DAS C�LULAS
+    text-align:         >>>>> alinhamento do texto
+            ~~center
+            ~~right
+            ~~left
+    vertical-aligne:
+            ~~ top (alinha texto das c�lulas no top)
+            ~~ botton (texto na parte de baixo)
+            ~~ midle (conte�do alinhado ao centro da c�lula)
+
+*/
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align:CENTER;
+}
+
+/*classe ce e classe cd 
+    Temos a Classe para formatar diversos arquivos diferentes de uma �nica vez 
+>>>>>>>>>   usamos o .
+
+*/
+
+
+/*a classe sobrep�es o que � definido para a tag principal*/
+table#tabelaspec td.ce{
+    color:white;
+    background-color:#606060;
+    vertical-align: top;
+    font-weight:bold; /*negrito*/
+}
+
+
+table#tabelaspec td.cd {
+    background-color:cecece;
+}
+
+/*formatando o t�tulo da tabela*/
+table#tabelaspec caption{
+        color: #808080;
+        font-size:13pt;
+        font-weight:bolder; 
+}
+
+
+/*formatando o span DATA
+    ~~bloco flutuante
+    ~~flutua a direita
+    ~~cor preta
+    ~~ tamanho 8 pontos
+    ~~ margem no topo de 10 px
+
+*/
+
+    table#tabelaspec caption span {
+    display:block;
+    float: right;
+    color:black;
+    font-size: 8pt;
+    margin-top:10px;
+
+    }
+    
+
+aside#lateral {
+
+display:block;
+width:575px;
+float: right;
+background-color:#dddddd;
+padding:10px;
+margin:10px;
+box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+    aside#lateral h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size:20pt;
+        color:#606060;
+        margin-top:0px;
+    }
+
+
+
+    aside#lateral h2 {
+    background-color:#606060;
+    font-size:13pt;
+    color:white;
+    padding:5px;
+    
+    }
+/*>>>>>>>>>>>>>> clear: both; <<<<<<<<<<<
+    faz com que o conte�do do footer seja mostrado fora da divis�o feita acima RODAPE
+
+*/
+footer#rodape {
+    clear: both;
+    border-top:1px solid #606060;
+}
+
+
+    footer#rodape p {
+        text-align:center;
+    
+        }
+
+/*links se mant�m pretos mesmo depois de terem sido clicados */
+    footer#rodape a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+div#tv-radio1 {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display:block;
+    position:relative;
+    left:0px;
+    margin-left:60px;
+    margin-right:0px;
+    margin-top:10px;
+    padding:0px;
+}
+
+
+
+div#tv-radio2 {
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    display: block;
+    position: relative;
+    left: 0px;
+    margin:20px 0px 0px 100px;
+    padding: 0px;
+    border:0px;
+}
+
+div#tv-radio3 {
+    display:block;
+    position:relative;
+    left:7px;
+}

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Teste JavaScript</title>
+    
+    <script>
+        //função - JAVASCRIPT É SENSITIVE CASE - função conjunto de comandos ou uma rotina que acontece caso disparamos essa sequência
+
+        function acendeLampada() {
+            document.getElementById("luz").src = "_imagens/lampada-acesa.jpg";//pegar um elemento pelo id - referencia elemento pelo id, depois alteramos o src dele
+        }// () PARÂMETROS {} CÓDIGOS
+
+        function apagaLampada() {
+            document.getElementById("luz").src = "_imagens/lampada-apagada.jpg";
+        }
+
+        function quebraLampada() {
+            document.getElementById("luz").src = "_imagens/lampada-quebrada.jpg";
+        }
+    </script>
+
+
+</head>
+<body>
+    <h1>Acenda a lâmpada!</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()">
+    <!--onmousemove
+        quando mouse passa na imagem, a função acende lampada será chamada
+        onmouseout
+        quando tira o mouse de cima do evento-->
+
+</body>
+</html>

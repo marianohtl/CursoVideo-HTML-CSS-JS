@@ -1,0 +1,863 @@
+<html>	<!--marca ou tag-->
+</html> <!--fechamento>
+
+<!--dizer para o navegador documento html5:-->
+<!DOCTYPE html>
+
+<!--idioma que será escrito (dentro tag html):-->
+<html lang="pt-br"> </html>
+
+<!--cabeçalho, configurações comportamentais dentro do site, como ele será configurado-->
+<head>
+</head>
+
+<!-- Tudo que for aparecer visualmente-->
+<body>
+</body>
+
+
+<!--ESTRUTURA BÁSICA HTML-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+
+</head>
+
+<body>
+
+
+</body>
+</html>
+
+<!-- Dentro da tag <meta>, que se encontra dentro da tag <head> , 
+usar charset=""
+<meta charset="UTF-8"  , SIGNIFICA CONJUNTO DE CARACTERES, UTF8 É O PADRÃO LATINO
+<META> NÃO TEM FECHAMENTO, TEMOS ENTÃO DUAS OPÇÕES, UTILIZAR A BARRA DE FECHAMENTO NO 
+FINAL DA TAG "<meta charset="UTF-8"/>  OU SIMPLESMENTE DEIAR APENAS A TAG DE ABERTURA-->
+
+
+<!-- tag comportamental, dentro de <head>, muda o nome do arquivo na aba do navegador-->
+<title></title>
+
+<!-- tag <h1> </h1>, TÍTULO, HIERARQUIA DE TÍTILOS, 
+SENDO H1 -> TÍTULO PRINCIPAL
+H2 ->  SUBTÍTULO DE H1
+H3 -> SUBTÍTULO DE H1 E H2-->
+<font color="blue">
+<!-- era a formatação antiga do html, a formatação agora é feita em css (folha de estilo), 
+formatação é aglo comportamental-->
+
+<!-- formatação html5 em css-->
+<style></style>
+
+<!-- font-family: ARIAL;    -> tipo de fonte
+	font-size: 30pt;   -> tamanho da fonte
+	color: blue;    -> cor da fonte 
+	text-shadow: 2px 2px 2px black; -> sombras nas letras
+	-->
+	
+<style>
+	<h1>{
+	font-family: ARIAL;
+	fonte-size: 30pt;
+	color: blue;
+	text-shadow:  2px 2px 2px black;
+	}
+</style>
+
+<!-- em servidores temos diferença entre letars maiúsculas e letras minúsculas
+alguns S.O, quando se usa o _ na frente, temos então uma preferença
+->  NOME DE ARQUIVOS, SEMPRE LETRAS INÚSCULAS-->
+
+<div></div> <!-- -> dentro da área body, criando uma divisão-->
+<div id="interface"></div>  <!-- div com identificação, id interface-->
+
+<!-- Agrupando um Título, não muda nada visualmente, temos diferena semântica 
+referente a títulos que fazem parte de um mesmo grupo-->
+
+<hgroup></hgroup>
+
+<!-- tag img, são imagens, seu parâmetro principal é o src -> source ou origem, aqui indicamos o caminho da nossa imagem-->
+<img src="">
+<img src="_imagens\glass-oculos-preto-peq.png">
+
+<!-- delimitar a área de cabeçalho do site, tag para cabeçalho -> semantica -->
+<header id="cabecalho"></header>
+<!--não utilizarmos maiusc. minusc, acentuação, etc -->
+<br/>
+<!-- break roll, quebra de linha, cada uso do br irá gerar uma quebra de linha, quebra de linhas entre parágrafos ->	&nbsp;-->
+
+
+
+
+<!
+<!--definindo parágrafo-->
+
+<!-- non break space espaço sem quebra, cada nbsp; me traz espaços em branco-->
+
+<!
+<p></p> 
+
+<!-- ifienização e quebra de palavras -->
+ 
+
+
+<wbr/>
+<!-- entre as palavras, wbr / world break / quebra de palavra -->
+
+<!-- &shy; = soft hypen  separação de palavra com hífen-->
+&shy;
+
+<!-- símbolos especiais -->
+&lt;	<!--maior que >  -->
+&gt;	<!-- menor que <  -->
+&le;	<!--maior ou igual a-->
+&ge;	<!--menor ou igua a -->
+<!-- simbolo monetários-->
+&pound;		<!--libra -->
+&yen;		<!--yen -->
+&euro;		<!--euro-->
+
+
+&copy;		<!--símbolo de copyright-->
+&reg;		<!-- marca registrada-->
+&trade;		<!-- utm - trade mark-->
+
+ 
+&permil;	<!--  simbolo do permil-->
+&sum;		<!--soma--> 
+&infin;		<!--infito -->
+&times;		<!--multiplicação-->
+&plumn;		<!-- + e o -	-->
+&oplus;		<!--mais dentro de uma circunferência-->
+&radic;		<!--símbolo de radiciação-->
+&ne;		<!--símbolo de diferente-->
+&delta;   &Delta; 	<!--letras gregas, delta maisc. e minusc.-->
+&Lambda;			<!--lambda-->
+&omega;
+&phi;
+<!-- setas -->
+&larr;		<!--seta para direita-->
+&rarr;		<!--seta para esquerda-->
+&uarr;		<!--seta para cima-->
+&darr;		<!--seta para baixo-->
+&harr;		<!--seta para os dois lados-->
+
+<!--nipes das cartas-->
+&spade;
+&clubs;
+&hearts;
+&diams;
+
+<b></b> <!--negrito-->
+<i></i> <!--italic-->
+<em></em> <!-- ENFASE -outra tecnica para inclunar as palavras em html5-->
+
+<!-- tags que morreram para html5 DEPRECIADAS-->
+<u></u> <!--sublinhado - u de underline -->
+<s></s> <!-- riscado-->
+
+<del></del>  <!-- indica que um texto que foi deletado -->
+<span></span> <!-- sublinhado nas novas normas html5-->
+
+
+"text-decoration"
+<span style="text-decoration: underline;" <!--utilizando o sublinhado, com text-decoration -->
+<span style="text-decoration: overline;"<!--linha acima do texto, com text decoration -->
+<span style="text-decoration: line-through;" <!--mesmo recurso do <del> porém sem resultado semântico - RISCADO-->
+<span style="text-decoration: none;" <!--texto sem decoração alguma -->
+
+
+<!--FORMATAÇÃO DE PARÂMETRO 
+font-weight:   parâmetro que indica a quantidade de negrido que o texto terá -->
+<span style="font-weight:;"
+<span style="font-weight:normal;"	<!--cor normal-->
+<span style="font-weight:bold;"		<!--negrito-->
+<span style="font-weight:bolder;"	<!--mais negrito que negrito-->
+<span style="font-weight:350;"		<!--Nível de negrito entre 100 e 900-->
+
+ <h2 aling="center"></h2>  <!-- formatação depreciada de alinhamento-->
+ 
+ <h2 style="text-align: center;">   <!-- centralizando -->
+ <h2 style="text-align: left;"> 		<!--padrão-->
+ <h2 style="text-align: right;"> 	<!--alinhamento a esquerda-->
+  <h2 style="text-align: justify;"> 		<!--justificado, alinhamento à esquerda e à direita--> 
+ <h2 style="text-align: justify; text-indent:50px"> <!--parágrafo, com parâmetro text-ident:50px dentro do style: -->  
+ 
+ 
+ <!-- modificando a configuração global da tag p-->
+<!-- formatação geral css, área head-->
+<!--formatação geral para todos os parágrafos-->
+<head>
+	<meta charset="UTF-8"/>
+	<title>Tudo sobre Google Glass</title>
+	<style>
+		p{
+		text-align: justify;
+		text-indent: 50-px;
+		}
+	</style>
+	
+</head>
+
+<!--maneira depreciada de centralizar-->
+<h2	align="center";>O que é</h2>
+
+<!--maneira correta, css-->
+<h1 style="text-align: center"> </h1>
+<h1 style="text-align: left"> </h1>
+<h1 style="text-align: right"> </h1>
+ 
+ <!--alinhamento em css-->
+ <p style="text-align: justify;"></p>
+ 
+ 
+ <p style="text-align: text-indent: 50px;">  <!--parágrafo-->
+ 
+ <p> exemplo de <sup>FORMATAÇÃO</sup></p>
+ <!-- sobreescrito -->
+ 
+  <p> exemplo de <sub>FORMATAÇÃO</sub></p>
+ <!-- sub-escrito -->
+ 
+ <p> x<sup>2</sup> e H<sub>2</sub>0</p>	<!-- x2 e H20 -->
+ 
+ 
+ <!-- tags que não existem não geram erro, simplesmente são ignoradas pelo navegador, <iostream ~ não aparece -->
+ 
+ #include <iostream>
+int main(){
+	cout <<"Olá, Mundo!";
+	return 0
+	}
+
+	
+<!--Maneira de mostrar esta tag é colocar iostream tag na tela-->
+&lt;iostream&gt;
+
+<pre></pre> <!-- pré formatado, considera os espaços e enters do texxto -->
+ 
+ <pre>
+ <code>
+#include &lt;iostream&gt;
+int main(){
+	count <<"Olá, Mundo!";
+	return 0
+}
+ </code>
+ </pre>
+<!--TAG ESPECÍFICA PARA FORMATAR CÓDIGO - tag semântica-->
+<code></code>
+ 
+ 
+ 
+ <pre>
+ <code>
+#include &lt;iostream&gt;
+int main(){
+	count <<"Olá, Mundo!";
+	return 0
+}
+ </code>
+ </pre>
+ 
+ ~~aula8~~
+ 
+ <head>
+ <body bgcolor="red">
+</head>
+<!--colors antigas, descontinuada--> 
+
+<!-- novo parâmetro -->
+<head>
+<body style="background-color: red;">
+</head>
+
+
+<!-- area style background -->
+
+<head>
+	<style>
+		body{
+		background-color: greenyellow;
+		}
+	
+	</style>
+</head>
+
+<!--maneiras conf. cor html5-->
+
+<!--conf. cor através de parâmetro color: -->
+<head>
+	<style>
+	body{
+	color: red;
+	}
+	</style>
+</head>
+
+<!--conf. cor através do código RGB-->
+
+
+<!--código em hexa para RGB, # + onde 00 vermelho, 00 verde, 00 azul-->
+<head>
+	<style>
+		body{
+		#60453E;
+		}
+	</style>
+</head>
+
+
+<!-- outra maneira de representar rgb -->
+<head>
+	<style>
+		body{
+		background-color: rgb(35, 132, 193);
+		}
+	</style>
+</head>
+
+<!--RGBA ~~ CANAL ALPHA - CANAL DE TRANSPARÊNCIA
+maior nível de alpha = 1, totalmente visível ou totalmente opaco, alpha = 0 , totalmente transparente -->
+
+
+<head>
+	<style>
+		body{
+		color: rgba(0,0,0,0.1);		
+	</style>
+</head>
+
+
+<!-- matiz, iluminação e luminosidade
+hsb, hill saturation braigh-->
+
+<head>
+<style>
+body{
+	background-color: hsl(165,81%,93%);
+}
+</style>
+</head>
+
+<!--USANDO O CANAL ALFA ~~~  hsla -->
+
+
+<head>
+<style>
+body{
+	background-color: hsla(165,81%,93%,0.5);
+}
+</style>
+</head>
+
+
+<!-- background de imagem -->
+
+<head>
+	<style>
+		body{
+		background-color: url("OI4K870.jpg");
+		}
+	</style>	
+</head>
+
+<!--Diminuindo o tamanho do arquivo, mantendo o tamanho gb (não altera o peso do arquivo-->
+
+<img src="fundo.jpg"  width"300"/>
+<!--o correto é diminuir o tamanho da imagem por programas de edição-->
+<!-- dependendo da conf. do computador, talvez apareça jpeg no nome, será necessário a edição para jpg-->
+
+
+<!--nunca colocar caminhos absolutos ~~ c:///-->
+<!--html3 caráter semântico, caráter de significado na construção de sites, ÁREA ESPECÍFICA PARA DELIMITAR IMAGENS QUE FAZEM PARTE DE CONTEÚDOS-->
+
+<figure>
+</figure>
+
+<!--LEGENDA PARA IMAGENS~~ -->
+<figcaption></figcaption>
+
+<!-- chamando arquivo de estilo -->
+<head>
+	<meta charset="UTF-8"/>
+	<title>Tudo sobre Google Glass</title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"> <!--folha de estilo = CSS  -parâmetro href - hypertext reference - conf. de qual arquivo será carregado - chamar arquivo de fora -->
+</head> 
+  
+  
+<!--Comentário no CSS-->  
+/**/
+
+<!--INÍCIO DO ARQUIVO CSS-->
+@charset "UTF-8";
+
+
+<!-- Definindo uma classe em imagens HTML-->
+<figure class="foto-legenda">
+
+ </figure>
+
+ 
+ <!-- PARAMETRO CLASS ~~ PADRÃO REFERENCIA CSS - NOMEDATAG.NOMEDACLASSE  CSS-->
+figure.foto-legenda {}
+
+<!--FORMATAÇÃO DA BORDA - CSS-->
+<!--tipo borda
+largura da borda 
+cor da borda-->
+figure.foto-legenda {
+		border: 8px solid red;
+		}
+		
+<!--FORMATANDO A BORDA CONFORME A IMAGEM->
+
+figure.foto-legenda img {
+	width: 100%;
+	height: 100%;
+}
+
+
+<!--CRIANDO SOMBRA - CSS-->
+box-shadow: 1px 1px 4px black;
+<!--criando efeito css, 
+posição absoluta dentro daborda branca (conteiner)
+POSIÇÃO DA LEGENDA-->
+
+
+<!--POSIÇÃO RELATIVA - 
+
+	figure.foto-legenda figcaption {
+	position: absolute;} <<<<<<<
+	
+	CONTEINER  PERTERCE À 
+	
+	
+	figure.foto-legenda{
+	position: relative; <<<<<<
+		
+		
+	COLOCAMOS O OBJETO CONTEINER (FIGURE) COMO POSIÇÃO RELATIVA, ISTO É ELE VAI FICAR EM UM LUGAR RELATIVO AO CÓDIGO HTML (ONDE ELE FOI COLOCADO NO HTML) E DENTRO DELE O FIGCAPTION VAI TER UMA POSIÇÃO ABSOLUTA DENTRO DO SEU PAI QUE É O FIGURE QUE FICA NA POSIÇÃO 0
+		-->
+	
+	figure.foto-legenda {
+		position: relative;
+		border: 8px solid wight;
+		box-shadow: 1px 1px 4px black;
+		}
+	
+	
+	figure.foto-legenda img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	figure.foto-legenda figcaption {
+		position: absolute;
+		top:0px;
+	}
+	
+
+	<!--CAMADA TRANSPARÊNTE DENTRO DA LEGENDA PARA QUE ELA POSSA SER EXIBIDA CORRETAMENTE-->
+	
+	
+	figure.foto-legenda figcaption {
+		position: absolute;
+		top:0px;
+		background-color: rgba(0,0,0,0.4);   <<<<!--transparência-->
+	}
+	
+	
+<!--COR DA FONTE BRANCA 
+	TAMANHO DA TRANSPARÊNCIA TOTAL NO CONTEINER DA IMAGEM-->
+	
+figure.foto-legenda figcaption {
+		position: absolute;
+		top:0px;
+		background-color: rgba(0,0,0,0.4);
+		color: white; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+		width: 100%;  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+		height: 100%; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	}
+	
+<!--ESPAÇO DENTRO DA LEGENDA- ~~ porém borda transpassa iamgem->	
+	figure.foto-legenda figcaption {
+		position: absolute;
+		top:0px;
+		background-color: rgba(0,0,0,0.4);
+		color: white;
+		width: 100%;
+		height: 100%;
+		padding: 10px; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+		
+		<!--ressolvendo problema de transpassagem da bordacria um box dentro da borda-->
+		
+		
+	figure.foto-legenda figcaption {
+		position: absolute;
+		top:0px;
+		background-color: rgba(0,0,0,0.4);
+		color: white;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	}
+	<!--resolvendo o texto sobre a imagem temporiariamente-->
+	
+	figure.foto-legenda figcaption {
+		opacity: 0;   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+		position: absolute;
+		top:0px;
+	 	background-color: rgba(0,0,0,0.4);
+		color: white;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	
+
+	
+<!--efeito de sobreposição quando mouse passar por cima, hover vai disparar um classe específica - formatação específica, quando passamos o mouse por cima do objeto, que no caso é o figcaption -->
+
+
+	figure.foto-legenda:hover figcaption {
+	opacity: 1;
+	}
+
+<!--efeito de transição discreto - tempo de transição-->
+figure.foto-legenda figcaption {
+		opacity: 0;
+		position: absolute;
+		top:0px;
+	 	background-color: rgba(0,0,0,0.4);
+		color: white;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		transition: opacity 1s; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	} 
+	
+<!--two type of lists
+
+listas ordenadas 		e		 listas desordenadas
+ondered lists - ol 				unodered lists - ul
+
+ítens de listas
+
+>>>> list items - li <<<
+
+TUDO QUE ESTIVER ENTRE ESTA TAG SERÁ UMA LISTA ORDENADA
+<ol></ol>
+
+CADA <li></li> SERÁ UM ÍTEM DA LISTA ORDENADA
+
+
+titulos tem meios que uma hierarquia, onde um h1 pode estar dentro de um conteiner
+
+tudo que está entre nav e / nav cria o menu de navegação
+
+
+MENU DE NAVEGAÇÃO 
+TÍTULO
+LISTA COM O ÍTENS  -->
+
+<nav>
+
+<h1>Menu Principal</h1>
+<ol>
+<li>Home</li>
+<li>Especificações</li>
+<li>Fotos</li>
+<li>Multimídia</li>
+<li>Fale conosco</li>
+</ol>
+</nav>
+
+
+<!--TIPOS DE LISTAS ORDENADAS
+3 TIPOS
+
+<ol type="1">
+PADRÃO Nº ORDENADA 1,2,3
+<ol type="1" start="3">
+LISTA Nº COM INÍCIO NO 3
+
+
+<ol type="a> <ol type="A">
+a , b, c, d, e
+PADRÃO ORDENADA ALFABÉTICA MAIÚSCULA/MINÚSCULA
+<ol type="a" start="3">
+d , e, f, g
+
+
+Nº CONFORME NÚMEROS ROMANOS MAISC/MINUSC
+<ol type="i" ~ <ol type="I"> ~ <ol type="i" start="3">
+i, ii, iii, iv, v
+
+-->
+
+<!--unordered lists  LISTA COM DEMARCADORES-->
+
+<ul></ul>
+
+
+<nav>
+
+<h1>Menu Principal</h1>
+<ul>
+<li>Home</li>
+<li>Especificações</li>
+<li>Fotos</li>
+<li>Multimídia</li>
+<li>Fale conosco</li>
+</ul>
+</nav>
+
+
+<!--typo="square" 
+type"circle" 
+type"disc"-->
+
+<ul type="">
+</ul>
+
+<!--Juntar tipo de lista com outro tipos de lista, ou juntar listas encadeadas, 
+uma dentro da outra-->
+
+<nav>
+	<h1>Menu Principal</h1>	
+	<ul type="disc">	<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	<li>Home</li>	
+	<li>Especificações</li>	
+	<li>Fotos</li>		
+	<li>Multimídia</li>	
+	<ol>				<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+		<li>Músicas</li> 
+		<li>Vídeos</li>	
+	</ol>				
+	<li>Fale conosco</li>
+	</ul>
+</nav>
+
+
+Curso de HTML5 - 12 - Links em HTML5
+
+
+<!--links ~ ligações entre um site e outro -->
+
+
+
+<!--ancora <a></a> (base criação do link  + referência para hypertext  (href)
+ABRE NA MESMA GUIA O PARÂMETRO-->
+<a href="https://www.tecmundo.com.br/google-glass">Project Glass</a>
+
+<!-- target"_blank" 
+uma nova guia aberta a partir de outra página-->
+<a href="https://www.tecmundo.com.br/google-glass" target"_blank">Project Glass</a>
+
+<!--"_self"    força abertura na mesma aba (pode-se omitir ou esplicitá-lo)-->
+<a href="https://www.tecmundo.com.br/google-glass" target"_self">Project Glass</a>
+
+<!--tirando os marcadores das listas-->
+	nav#menu ul {
+		list-style: none;   <<<<<<<<<<<<<<
+	}
+	
+	
+<!--colocando em letras maiúsculas tudo-->
+nav#menu ul {
+		list-style: none;
+		text-transform: uppercase; <<<<<<<<<<<<<<
+	}
+
+<!--formato vertical ~~~formato horizontal ~~~ parâmetros na mesma linha -->
+
+nav#menu li{
+		display: inline-block;    <<<<<<<<<<<
+	}
+<!--cor de fundo-->
+nav#menu li{
+		display: inline-block;
+		background-color: #dddddd;
+	}
+
+
+<!--parâmetro padding  ~~ cria espaço dentro da caixa -->
+
+0	nav#menu ul {
+		list-style: none;
+		text-transform: uppercase;
+		padding: 10 px; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	}
+
+<!--ESPAÇO ENTRE OS BOTÕES-->
+nav#menu li{
+		display: inline-block;
+		background-color: #dddddd;
+		padding: 10px;
+		margin: 20px;  <<<<<<<<<<<<<<<<<<<
+		}
+
+----------------aula 13 8:00-------------
+<!--colocando display como bloco, pois um bloco pode flutuar pela tela
+-->
+	
+ 	NAV#menu {
+		display: block;   <<<<<<<<<
+	}
+<!--queremos então que apenas a lista flutue pela tela logo na parte lista colocamos  posíção absoluta para o display
+posição absoluta = livre pelo site
+posição relativa = solto no conteiner
+-->
+
+	nav#menu ul {
+		list-style: none;
+		text-transform: uppercase;
+		position: absolute;
+		top: 
+		left:
+	}
+
+
+
+<!--ocultando item menu principal, porém mantendo ele visível para os ítens de busca -->
+
+	nav#menu h1{
+		display: none;
+	}
+	
+<!---->
+Curso de HTML5 - 14 - Efeitos visuais em CSS3 - by Gustavo Guanabara
+<!--efeito ao mover o mouse no menu li -->
+
+nav#menu li: hover{
+	background-color:#606060
+}
+
+<!--transições, tempo de transição-->
+
+nav#menu li{
+		display: inline-block;
+		background-color: #dddddd;
+		padding: 10px;
+		margin: 2px;
+		transition: background-color 1s; <<<<<<<<<<<<<<<<<<<<<<<<<<<
+		}
+
+<!--MANTENDO A COMPATIBILIDADE COM RETRO-COMPATIBILIDADE COM NAVEGADORES MAIS ANTIGOS-->
+
+<!-- prefixe - crossbronswer
+
+cria o código necessário para todos os navegadores possíveis -->
+
+
+transition: background-color 1s;
+
+http://pleeease.io/play/
+
+-webkit-transition: background-color 1s;
+transition: background-color 1s;
+
+<!-- 2º~sem formatação no texto; 1º cor do texto -->
+
+
+	nav#menu a {
+		color: #000000;		<<<<<<<<<<<<<<<<<<<<<<<,1º
+		text-decoration: none;		<<<<<<<<<<<<<<<<<<<<<<2º
+	}
+<!--	MUDAR COR DO TEXTO QUANDO PASSA O MOUSE POR CIMA	-->	
+	
+	nav#menu a:hover {
+		color: #ffffff;
+	}
+
+<!-- SUBLINHAR O LINK QUANDO O MOUSE PASSA POR CIMA -->
+	nav#menu a:hover {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+<!--div interface posição relativa  ~~ todo conteúdo do site com exceção do menu está em posição absoluta delimitada a Xpx; definido -->
+
+	nav#menu ul {
+		list-style: none;
+		text-transform: uppercase;
+		position: absolute;
+		top: 0px;
+		left: 700px;
+	}
+
+
+<!--centralização através de margens ~ ORDENADA:
+CIMA
+DIREITA
+ABAIXO 
+ESQUERDA
+
+PARÂMETRO MARGEM ~~ 
+
+width: 1000px; >>>> tamanho do conteiner posição relativa
+background-color:  white; >>>> cor do conteiner
+margin: -20 auto 0px auto; >>>> posição levando em conta a margem do conteiner  ÁREA EXTERNA DO OBJETO
+~~~~~~ auto (se ajusta conforme o tamanho da janela da página
+
+
+-->
+	
+		div#interface{
+			width: 1000px;
+			background-color: white;
+			margin: -20px auto 0px auto;
+		}
+
+
+<!--sombra
+rbga (red, green , blue , (alfa - opacidade)-->
+
+div#interface{
+			width: 1000px;
+			background-color: white;
+			margin: -20px auto 0px auto;
+			box-shadow: 0px 0px 10px rgba(0,0,0,.5)
+			}
+
+			
+			
+			9.0
+
+<!--padding (espaço interno do objeto) cima, direita baixo esquerda
+caso padding valores iguais, basta colocar Xpx uma única vez -->
+
+div#interface{
+			width: 1200px;
+			background-color: white;
+			margin: -20px auto 0px auto; padding: 10px 10px 10px 10px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,.5)
+			
+		}
+		
+		
+<!--posicionando imagens-->
+
+	header#cabecalho img#icone {
+			position: absolute;
+			left: 1100px; 
+			top: 80px;
+		}
+		
+		aula 16
+		aula 17
+		aula 18
+		
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
